@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es5",
-    "noLib": false,
-    "allowJs": false
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "target": "es5",
+      "noLib": false,
+      "allowJs": false
   },
-  "files": ["./src/index.ts"],
-  "exclude": ["node_modules"]
+  "files": [
+      "./src/index.ts"
+  ],
+  "exclude": [
+      "node_modules"
+  ]
 }

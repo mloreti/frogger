@@ -1,34 +1,32 @@
-var path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: {
-    index: "./src/index.ts"
-  },
+  entry: './src/index.ts',
   module: {
     loaders: [
       {
         test: /\.ts$/,
-        exclude: path.resolve(__dirname, "node_modules"),
-        loader: "babel-loader!awesome-typescript-loader"
+        exclude: path.resolve(__dirname, 'node_modules'),
+        loader: 'babel-loader!awesome-typescript-loader'
       }
     ]
   },
   resolve: {
     modules: [__dirname, 
-      path.resolve(__dirname, "src"), 
-      "node_modules"
+      path.resolve(__dirname, 'src'),
+      'node_modules',
     ],
-    extensions: [".ts", ".js"]
+    extensions: ['.ts', '.js'],
   },
   output: {
-    path: __dirname + "/dist/",
-    filename: "[name].js",
-    publicPath: "dist"
+    path: path.join(__dirname, '/dist/'),
+    filename: '[name].js',
+    publicPath: 'dist',
   },
   devServer: {
-    publicPath: "/",
-    contentBase: "./dist",
-    hot: true
+    publicPath: '/',
+    contentBase: './dist',
+    hot: true,
   },
-  devtool: "source-map"
+  devtool: 'source-map',
 };

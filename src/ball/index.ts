@@ -1,4 +1,4 @@
-export class Ball {
+export class Frog {
   x : number;
   y : number;
   velocity : number;

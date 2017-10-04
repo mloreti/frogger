@@ -1,8 +1,8 @@
-import { Ball } from './ball';
+import { Frog } from './frog';
 
 const canvas : any = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-const ball = new Ball(ctx, canvas);
+const frog = new Frog(ctx, canvas);
 
-document.addEventListener('keydown', e => ball.move(e.keyCode));
+document.addEventListener('keydown', e => frog.move(e.keyCode));

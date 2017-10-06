@@ -10,7 +10,7 @@ export class Frog {
     this.radius = 25;
     this.x = this.canvas.width / 2 - this.radius;
     this.y = this.canvas.height - this.radius;
-    this.color = 'blue';
+    this.color = 'green';
   }
 
   draw() {

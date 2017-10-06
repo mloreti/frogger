@@ -9,7 +9,7 @@ export class Car {
     private canvas : HTMLCanvasElement,
     public y : number,
   ) {
-    this.velocity = this.numberRange(30, 15);
+    this.velocity = this.numberRange(25, 5);
     this.x = this.numberRange(0, this.canvas.width);
     this.width = 100;
     this.color = 'black';
@@ -21,7 +21,7 @@ export class Car {
 
   move() {
     if (this.x + this.velocity > this.canvas.width + this.width) {
-      this.x = 0;
+      this.x = -(this.width);
     } else {
       this.x += this.velocity;
     }

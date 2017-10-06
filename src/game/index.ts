@@ -28,7 +28,7 @@ export class Game {
   }
 
   startCars() {
-    this.interval = setInterval(() => this.render(), 60);
+    this.interval = setInterval(() => this.render(), 33);
   }
 
   detectCollision() {
